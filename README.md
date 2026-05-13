@@ -25,7 +25,7 @@ This project solves these issues by implementing a **Medallion Architecture (Bro
 
 ## Directory Structure
 ```text
-/sap_etl_project/
+/SAP-HR-Finance-ETL-Pipeline/
 ├── .env                              ← Environment variables (e.g., credentials, file paths)
 ├── pyproject.toml                    ← Project configuration (setuptools backend)
 ├── README.md
