@@ -1,0 +1,68 @@
+# ==========================================
+# Data Folders (Medallion Architecture)
+# ==========================================
+# Ignore all data files to avoid committing large datasets to Git.
+/data/00_raw/*
+/data/01_bronze/*
+/data/02_silver/*
+/data/03_gold/*
+/data/04_reporting/*
+
+# Keep the data folder structure intact in Git without committing the files
+!/data/00_raw/.gitkeep
+!/data/01_bronze/.gitkeep
+!/data/02_silver/.gitkeep
+!/data/03_gold/.gitkeep
+!/data/04_reporting/.gitkeep
+
+# ==========================================
+# Database & Metadata
+# ==========================================
+# DuckDB files
+*.duckdb
+*.duckdb.wal
+
+# ==========================================
+# Python & Packaging
+# ==========================================
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Editable installs & packaging
+*.egg-info/
+.eggs/
+.Python
+build/
+dist/
+
+# ==========================================
+# Environments & Secrets
+# ==========================================
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# ==========================================
+# IDEs & Jupyter Notebooks
+# ==========================================
+# Jupyter
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# Other IDEs/OS files
+.idea/
+.DS_Store
+
+# ==========================================
+# Sensitive Pipeline Scripts
+# ==========================================
+pipelines/01_ingest/parsers/zpost_parser.py
+pipelines/02_transform/sql/zpost_std_cost.sql
+pipelines/03_aggregate/build_hr_master.py
+pipelines/03_aggregate/extract_psg_mismatches.py
