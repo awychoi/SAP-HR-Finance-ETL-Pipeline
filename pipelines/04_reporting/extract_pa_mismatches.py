@@ -56,6 +56,7 @@ def extract_personnel_area_mismatches():
             "Personnel Number" IS NOT NULL 
             AND TRIM("Personnel Number") != ''
             AND "Actual Personnel Area" != "Personnel area"
+            AND "Post Type" IN ('01', '07', '12', '13', '15', '16', '22', '35')
     """
 
     try:
