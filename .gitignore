@@ -60,7 +60,7 @@ env/
 .DS_Store
 
 # ==========================================
-# Sensitive Pipeline Scripts
+# Pipeline Scripts
 # ==========================================
 pipelines/01_ingest/parsers/zpost_parser.py
 pipelines/02_transform/sql/zpost_std_cost.sql
