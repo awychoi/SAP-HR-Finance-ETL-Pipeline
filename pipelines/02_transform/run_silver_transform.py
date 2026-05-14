@@ -1,4 +1,3 @@
-import duckdb
 from pathlib import Path
 from datetime import datetime
 from pipelines.utils.metadata import get_conn, log_transform
