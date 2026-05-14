@@ -2,8 +2,6 @@
 
 > **A high-performance, local ETL pipeline built to ingest unstructured SAP exports, resolve complex overlapping temporal boundaries, and apply Medallion Architecture principles.**
 
-Built to solve problems that had outgrown Excel, this project shows how complex SAP data can be transformed into a faster, more reliable analytical workflow.
-
 ## 📖 The Problem
 Enterprise SAP data is notoriously difficult to work with outside the ERP environment. This project tackles two major data engineering challenges:
 1. **Polluted Exports:** SAP background jobs export data as `.txt` files polluted with visual page breaks, repeating headers, and inconsistent delimiters. 
