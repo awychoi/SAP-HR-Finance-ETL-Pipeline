@@ -7,9 +7,6 @@ from parsers.extractor_base import extract_sap_raw_data
 from parsers import zpost_parser, se16_parser
 from pipelines.utils.metadata import get_conn, get_file_hash, is_already_processed, log_processed_file, log_run
 
-# ==========================================
-# Configuration
-# ==========================================
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 RAW_DIR    = PROJECT_ROOT / "data" / "00_raw"
 BRONZE_DIR = PROJECT_ROOT / "data" / "01_bronze"
@@ -18,10 +15,6 @@ BRONZE_DIR.mkdir(parents=True, exist_ok=True)
 
 REGISTERED_PARSERS = [zpost_parser, se16_parser]
 
-
-# ==========================================
-# Main Execution
-# ==========================================
 def process_file(file_path: Path, conn: duckdb.DuckDBPyConnection) -> int:
     print(f"Processing: {file_path.name}...")
 

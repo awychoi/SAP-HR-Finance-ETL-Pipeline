@@ -3,9 +3,6 @@ import pandas as pd
 from pathlib import Path
 from datetime import datetime
 
-# ==========================================
-# Configuration & Paths
-# ==========================================
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 GOLD_DIR      = PROJECT_ROOT / "data" / "03_gold"
 REPORTING_DIR = PROJECT_ROOT / "data" / "04_reporting"
